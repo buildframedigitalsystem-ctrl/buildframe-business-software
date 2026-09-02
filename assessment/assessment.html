@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Assess My Business | BuildFrame Business Software
+    </title>
+
+    <meta name="description"
+        content="Tell BuildFrame how your business currently works, what challenges you face, and what you want to improve.">
+
+    <link rel="stylesheet" href="assessment.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         BUILDFRAME BUSINESS ASSESSMENT
+    ========================================= -->
+
+    <div class="assessment-page">
+
+        <!-- Header -->
+        <header class="assessment-header">
+
+            <a class="assessment-brand" href="../index.html" aria-label="Return to BuildFrame homepage">
+                <img src="../assets/logos/buildframe-logo.png" alt="BuildFrame Business Software"
+                    class="assessment-logo">
+            </a>
+
+            <a href="../index.html" class="assessment-back-link">
+                Back to Home
+            </a>
+
+        </header>
+
+
+        <!-- Main Assessment -->
+        <main class="assessment-main">
+
+            <!-- Introduction -->
+            <section class="assessment-intro" id="assessment-intro">
+
+                <p class="assessment-eyebrow">
+                    Business Assessment
+                </p>
+
+                <h1>
+                    Let's Understand How Your Business Works
+                </h1>
+
+                <p class="assessment-intro-text">
+                    Tell us about your business, the tools you already use,
+                    the challenges you are experiencing, and what you would
+                    like to improve.
+                </p>
+
+                <p class="assessment-intro-note">
+                    We won't assume you need to replace everything.
+                    If something already works for your business,
+                    we'll take that into account.
+                </p>
+
+                <button type="button" class="assessment-start-button" id="assessment-start-button">
+                    Start My Assessment
+                </button>
+
+            </section>
+
+
+            <!-- Assessment Workspace -->
+            <section class="assessment-workspace" id="assessment-workspace" hidden>
+
+                <!-- Progress -->
+                <div class="assessment-progress">
+
+                    <div class="assessment-progress-top">
+
+                        <span id="assessment-step-label">
+                            Step 1
+                        </span>
+
+                        <span id="assessment-progress-label">
+                            1 of 6
+                        </span>
+
+                    </div>
+
+                    <div class="assessment-progress-track" aria-hidden="true">
+                        <div class="assessment-progress-bar" id="assessment-progress-bar"></div>
+                    </div>
+
+                </div>
+
+
+                <!-- Form -->
+                <form class="assessment-form" id="business-assessment-form" novalidate>
+
+                    <!--
+                        Assessment steps will be added here
+                        one section at a time.
+                    -->
+
+                    <div class="assessment-step-container" id="assessment-step-container"></div>
+
+
+                    <!-- Navigation -->
+                    <div class="assessment-navigation">
+
+                        <button type="button" class="assessment-button assessment-button-secondary"
+                            id="assessment-previous-button" hidden>
+                            Previous
+                        </button>
+
+                        <button type="button" class="assessment-button assessment-button-primary"
+                            id="assessment-next-button">
+                            Continue
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer class="assessment-footer">
+
+            <p>
+                BuildFrame Business Software
+            </p>
+
+            <p>
+                Built &amp; Tailored for Your Business.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="assessment.js"></script>
+
+</body>
+
+</html>
