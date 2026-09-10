@@ -2677,3 +2677,91 @@ select {
     }
 
 }
+
+/* =========================================================
+   BUILDFRAME SCHEDULED POSTS
+   ========================================================= */
+
+.scheduled-posts-section {
+    padding: 34px 0;
+    background: #ffffff;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.scheduled-posts-header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.scheduled-posts-header h2 {
+    margin: 6px 0 0;
+}
+
+.scheduled-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.scheduled-post-card {
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid rgba(15, 23, 42, 0.10);
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.07);
+}
+
+.scheduled-post-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+.scheduled-post-body {
+    padding: 18px;
+}
+
+.scheduled-post-meta {
+    margin-bottom: 8px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    opacity: 0.65;
+}
+
+.scheduled-post-title {
+    margin: 0 0 10px;
+    font-size: 1.15rem;
+    line-height: 1.3;
+}
+
+.scheduled-post-caption {
+    margin: 0;
+    line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+    .scheduled-posts-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .scheduled-posts-section {
+        padding: 26px 0;
+    }
+
+    .scheduled-posts-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .scheduled-posts-grid {
+        grid-template-columns: 1fr;
+    }
+}
